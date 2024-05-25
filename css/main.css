@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dadada;
+    color: #242424;
+}
+
+.main {
+    color: #dadada;
+    background-image: url("../img/landingPagePic.jpg");
+    padding: 24px 108px;
+    
+}
+.main p {
+    margin: 0;
+}
+.main .sitename {
+    padding-bottom: 192px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.main .large-text {
+    padding-bottom: 24px;
+    font-weight: 900;
+    font-size: 5em;
+}
+.main .desc {
+    padding-bottom: 48px;
+}
+.links {
+    padding-bottom: 240px;
+}
+.links a{
+    text-decoration: none;
+    border: 3px solid #dadada;
+    border-radius: 12px;
+    padding: 16px 32px;
+    color: #dadada;
+}
+.links .signup {
+    background-color: #dadada;
+    color: #242424;
+    font-weight: 700;
+}
+.links .signup:hover {
+    background-color: #242424;
+    color: #dadada;
+}
+.links .login {
+    margin-left: 16px;
+    padding: 16px 40px;
+    font-weight: 700;
+}
+.links .login:hover {
+    background-color: #dadada;
+    color: #242424;
+}
+
