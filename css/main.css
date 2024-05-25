@@ -56,4 +56,15 @@ body {
     background-color: #dadada;
     color: #242424;
 }
-
+.grid-container {
+    margin: 64px 72px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.grid-item {
+    padding: 24px 36px;
+}
+.grid-item-heading {
+    font-weight: 700;
+    padding-bottom: 16px;
+}
