@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #242424;
     color: #dadada;
 }
@@ -18,15 +18,21 @@ body {
     display: flex;
     flex-direction: row;
 }
+.grid-item .theme {
+    cursor: pointer;
+}
 .site p {
     margin: 0;
     font-weight: 700;
     font-size: 1.5em;
     padding-left: 14px;
 }
+.site a {
+    display: flex;
+}
 .login-head p {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 2px;
     text-align: center;
     font-size: 2em;

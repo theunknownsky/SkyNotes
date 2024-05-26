@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #dadada;
     color: #242424;
 }
@@ -79,7 +79,9 @@ body {
     width: 50%;
     height: 80px;
     padding-bottom: 24px;
-    
+}
+.grid-item .theme {
+    cursor: pointer;
 }
 .foot-grid-container {
     background-color: #242424;
