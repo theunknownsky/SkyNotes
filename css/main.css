@@ -86,7 +86,7 @@ body {
     color: #dadada;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 80px 432px;
+    padding: 48px 432px;
     font-size: 0.8em;
     text-align: center;
 }
