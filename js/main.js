@@ -33,3 +33,14 @@ function changeFooterThemeToDarkMode(){
         }
     });
 }
+
+// 
+function storeThemeDataToIndex(){
+    localStorage.setItem('theme', theme);
+    window.location.href = "../html/index.html";
+}
+
+function storeThemeDataToLogin(){
+    localStorage.setItem('theme', theme);
+    window.location.href = "../html/login.html";
+}

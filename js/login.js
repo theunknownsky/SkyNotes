@@ -1,3 +1,13 @@
+var theme = 0;
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Retrieve the variable from localStorage
+    const theme = localStorage.getItem('theme');
+    // Display the variable
+    console.log('Theme: ' + theme);
+    setLoginTheme(theme)
+});
+
 // login.html header changes
 function changeLoginHeaderToLightMode(){
     document.getElementById("theme").src = "../img/sun-black.svg";
@@ -45,5 +55,20 @@ function changeLoginTheme(){
         changeFormToDarkMode();
         theme = 0;
     }
-    
+    localStorage.setItem('theme', theme);
+}
+
+function setLoginTheme(currentTheme){
+    if (currentTheme == 0){
+        changeBodyThemeToDarkMode();
+        changeFooterThemeToDarkMode();
+        changeLoginHeaderToDarkMode();
+        changeFormToDarkMode();
+    } else if (currentTheme == 1){
+        changeBodyThemeToLightMode();
+        changeFooterThemeToLightMode();
+        changeLoginHeaderToLightMode();
+        changeFormToLightMode();  
+    }   
+    theme = currentTheme;
 }

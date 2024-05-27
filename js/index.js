@@ -1,3 +1,13 @@
+var theme = 0;
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Retrieve the variable from localStorage
+    const theme = localStorage.getItem('theme');
+    // Display the variable
+    console.log('Theme: ' + theme);
+    setIndexTheme(theme)
+});
+
 // img changes in index.html
 function changeIndexHTMLImgToLightMode(){
     document.getElementById("theme").src = "../img/sun-black.svg";
@@ -23,4 +33,18 @@ function changeIndexTheme(){
         changeFooterThemeToDarkMode();
         theme = 0;
     }
+    localStorage.setItem('theme', theme);
+}
+
+function setIndexTheme(currentTheme){
+    if (currentTheme == 0){
+        changeIndexHTMLImgToDarkMode();
+        changeBodyThemeToDarkMode();
+        changeFooterThemeToDarkMode();
+    } else if (currentTheme == 1){
+        changeIndexHTMLImgToLightMode();
+        changeBodyThemeToLightMode();
+        changeFooterThemeToLightMode();
+    }
+    theme = currentTheme;
 }
