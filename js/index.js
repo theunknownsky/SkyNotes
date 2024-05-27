@@ -1,4 +1,4 @@
-var theme = 0; // theme default: dark mode
+// img changes in index.html
 function changeIndexHTMLImgToLightMode(){
     document.getElementById("theme").src = "../img/sun-black.svg";
     document.getElementById("secure").src = "../img/shield-check.svg";
@@ -9,37 +9,18 @@ function changeIndexHTMLImgToDarkMode(){
     document.getElementById("secure").src = "../img/shield-check-white.svg";
     document.getElementById("eye").src = "../img/eye-white.svg";
 }
-function changeTheme(){
-    if (theme === 0){
-        alert("You changed into Light Mode");
+
+// theme change for index.html
+function changeIndexTheme(){
+    if (theme == 0){
         changeIndexHTMLImgToLightMode();
-        document.body.style.backgroundColor = "#dadada";
-        document.body.style.color = "#242424";
-        document.getElementById("footer").style.color = "#dadada";
-        document.getElementById("footer").style.backgroundColor = "#242424";
-        const links = document.querySelectorAll('.a-child'); // Select all a tags with class a-child
-        const numLinksToChange = 5;
-        links.forEach((link, index) => {
-            if (index < numLinksToChange) {
-                link.style.color = '#dadada'; // Change color to #dadada
-            }
-        });
+        changeBodyThemeToLightMode();
+        changeFooterThemeToLightMode();
         theme = 1;
-    } else if (theme === 1){
-        alert("You changed into Dark Mode");
+    } else if (theme == 1){
         changeIndexHTMLImgToDarkMode();
-        document.body.style.backgroundColor = "#242424";
-        document.body.style.color = "#dadada";
-        document.getElementById("footer").style.color = "#242424"
-        document.getElementById("footer").style.backgroundColor = "#dadada";
-        
-        const links = document.querySelectorAll('.a-child'); // Select all a tags with class a-child
-        const numLinksToChange = 5;
-        links.forEach((link, index) => {
-            if (index < numLinksToChange) {
-                link.style.color = '#242424'; // Change color to #dadada
-            }
-        });
+        changeBodyThemeToDarkMode();
+        changeFooterThemeToDarkMode();
         theme = 0;
     }
 }
