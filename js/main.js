@@ -44,3 +44,8 @@ function storeThemeDataToLogin(){
     localStorage.setItem('theme', theme);
     window.location.href = "../html/login.html";
 }
+
+function storeThemeDataToSignup(){
+    localStorage.setItem('theme', theme);
+    window.location.href = "../html/signup.html";
+}

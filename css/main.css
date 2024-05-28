@@ -87,8 +87,8 @@ body {
     background-color: #dadada;
     color: #242424;
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 48px 432px;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 48px 0px;
     font-size: 0.8em;
     text-align: center;
 }

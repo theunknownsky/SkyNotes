@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/font-import.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="header">
+        <div class="grid-item">
+            <div class="site">
+                <a href="index.html">
+                    <img src="../img/cloud-fog2-white.svg" alt="" height="32px" id="logo">
+                    <p class="sitename" id="sitename">Sky Notes</p>
+                </a>
+            </div>
+            
+        </div>
+        <div class="grid-item">
+            <img src="../img/moon-white.svg" alt="" height="32px" class="theme" id="theme" onclick="changeLoginTheme()">
+        </div>
+    </div>
+    <div class="signup-head">
+        <p>Sign up to Sky Notes</p>
+    </div>
+
+    <div class="main-container">
+        <div></div>
+        <div>
+            <div class="form-container">
+                <div></div>
+                <form action="">
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input type="text" id="firstname" name="firstname" placeholder="Rose Jane">
+                    <br>
+                    <div id="first-error">
+                        <br>
+                    </div>
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input type="text" id="lastname" name="lastname" placeholder="Bog-acon">
+                    <br>
+                    <div id="lastname-error">
+                        <br>
+                    </div>
+                    <label for="nickanme">Nickname</label>
+                    <br>
+                    <input type="text" id="nickanme" name="nickanme" placeholder="Rusjin Maganda">
+                    <br>
+                    <div id="lastname-error">
+                        <br>
+                    </div>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="rusjinmaganda@gmail.com">
+                    <br>
+                    <div id="email-error">
+                        <br>
+                    </div>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Must be more than 4 characters">
+                    <br>
+                    <div id="password-error">
+                        <br>
+                    </div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <br>
+                    <input type="confirmPassword" id="confirmPassword" name="confirmPassword">
+                    <br>
+                    <div id="confirmPassword-error">
+                        <br>
+                    </div>
+                    <button>Register</button>
+                </form>
+                <div></div>
+            </div>
+            <div class="to-login">
+                <p>Have an account?&nbsp;<a href="login.html">Login Here</a></p>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <footer>
+        <div class="foot-grid-container" id="footer">
+            <div></div>
+            <div class="foot-grid-item">
+                <div class="foot-grid-content">
+                    &copy; Vonn Harold Mamaril
+                    <br>
+                    All Rights Reserved
+                    <br><br>
+                    This website is made as a project requirement for the subject "Human Computer Interaction".
+                </div>
+            </div>
+            <div class="foot-grid-item">
+                <div class="foot-grid-content">
+                    Contact Dev at:
+                    <br><br>
+                    <a href="https://github.com/TheUnknownSky" class="a-child">GitHub</a>
+                    <br>
+                    <a href="https://www.facebook.com/TheUnknownSkyyy/" class="a-child">Facebook</a>
+                    <br>
+                    <a href="https://www.youtube.com/channel/UChbTgw0Ez6tM1Edj1nUFC8A" class="a-child">YouTube</a>
+                    <br>
+                    <a href="https://www.instagram.com/inconnusciel/" class="a-child">Instagram</a>
+                    <br>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlGTpjfBkJJmcCdGhbdNwRCHnbrlJbTcmVBtBLRXpHtndnGnBLHHmtwHFJbMwxDZKFLrrL" class="a-child">Gmail</a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/signup.js"></script>
+</body>
+</html>
