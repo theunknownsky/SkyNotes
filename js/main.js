@@ -10,6 +10,38 @@ function changeBodyThemeToDarkMode(){
     document.body.style.color = "#dadada";
 }
 
+// login/signup header changes
+function changeHeaderToLightMode(){
+    document.getElementById("theme").src = "../img/sun-black.svg";
+    document.getElementById("logo").src = "../img/cloud-fog2-black.svg";
+    document.getElementById("sitename").style.color = "#242424";
+}
+function changeHeaderToDarkMode(){
+    document.getElementById("theme").src = "../img/moon-white.svg";
+    document.getElementById("logo").src = "../img/cloud-fog2-white.svg";
+    document.getElementById("sitename").style.color = "#dadada";
+}
+
+// login/signup form changes
+function changeFormToLightMode(){
+    document.querySelectorAll('.form-container').forEach(element => {element.style.backgroundColor = '#ebebeb'});
+    document.querySelectorAll('.form-container').forEach(element => {element.style.border = '1px solid #bdbdbd'});
+    document.querySelectorAll('input').forEach(inputs => {
+        inputs.style.backgroundColor = '#dadada';
+        inputs.style.border = '1px solid #bdbdbd';
+        inputs.style.color = '#242424';
+    });
+}
+function changeFormToDarkMode(){
+    document.querySelectorAll('.form-container').forEach(element => {element.style.backgroundColor = '#1f1f1f'});
+    document.querySelectorAll('.form-container').forEach(element => {element.style.border = '1px solid #353535'});
+    document.querySelectorAll('input').forEach(inputs => {
+        inputs.style.backgroundColor = '#242424';
+        inputs.style.border = '1px solid #353535';
+        inputs.style.color = '#dadada';
+    });
+}
+
 // footer changes
 function changeFooterThemeToLightMode(){
     document.getElementById("footer").style.color = "#dadada";
@@ -32,20 +64,4 @@ function changeFooterThemeToDarkMode(){
             link.style.color = '#242424'; 
         }
     });
-}
-
-// 
-function storeThemeDataToIndex(){
-    localStorage.setItem('theme', theme);
-    window.location.href = "../html/index.html";
-}
-
-function storeThemeDataToLogin(){
-    localStorage.setItem('theme', theme);
-    window.location.href = "../html/login.html";
-}
-
-function storeThemeDataToSignup(){
-    localStorage.setItem('theme', theme);
-    window.location.href = "../html/signup.html";
 }
