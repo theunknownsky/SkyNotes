@@ -15,11 +15,19 @@ function changeHeaderToLightMode(){
     document.getElementById("theme").src = "../img/sun-black.svg";
     document.getElementById("logo").src = "../img/cloud-fog2-black.svg";
     document.getElementById("sitename").style.color = "#242424";
+    document.getElementById("about-us").style.color = "#242424";
+    document.getElementById("contact").style.color = "#242424";
+    document.getElementById("features").style.color = "#242424";
+    document.getElementById("login").style.color = "#242424";
 }
 function changeHeaderToDarkMode(){
     document.getElementById("theme").src = "../img/moon-white.svg";
     document.getElementById("logo").src = "../img/cloud-fog2-white.svg";
     document.getElementById("sitename").style.color = "#dadada";
+    document.getElementById("about-us").style.color = "#dadada";
+    document.getElementById("contact").style.color = "#dadada";
+    document.getElementById("features").style.color = "#dadada";
+    document.getElementById("login").style.color = "#dadada";
 }
 
 // login/signup form changes

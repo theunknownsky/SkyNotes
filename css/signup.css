@@ -6,9 +6,20 @@ body {
 }
 .header {
     display: grid;
-    grid-template-columns: auto 32px;
+    grid-template-columns: auto auto 32px;
     padding-top: 24px;
     margin: 0px 108px;
+}
+.nav {
+    display: flex;
+    float: right;
+    padding: 0px 24px;
+}
+.nav a {
+    padding: 8px 24px;
+}
+.nav a:hover {
+    background-color: #505050;
 }
 .grid-item a {
     color: #dadada;
