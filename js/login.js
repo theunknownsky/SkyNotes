@@ -1,8 +1,8 @@
 var theme = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Retrieve the variable from localStorage
-    const theme = localStorage.getItem('theme');
+    // Retrieve the variable from sessionStorage
+    const theme = sessionStorage.getItem('theme');
     // Display the variable
     console.log('Theme: ' + theme);
     setLoginTheme(theme)
@@ -23,7 +23,7 @@ function changeLoginTheme(){
         changeFormToDarkMode();
         theme = 0;
     }
-    localStorage.setItem('theme', theme);
+    sessionStorage.setItem('theme', theme);
 }
 
 function setLoginTheme(currentTheme){

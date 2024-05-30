@@ -1,11 +1,14 @@
 var theme = 0;
 
+console.log(sessionStorage.getItem('theme'));
+
 document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('theme') === null){
-        localStorage.setItem('theme') = 0;
+    if (sessionStorage.getItem('theme') === null){
+        sessionStorage.setItem('theme') = 0;
     }
-    // Retrieve the variable from localStorage
-    const theme = localStorage.getItem('theme');
+    console.log(sessionStorage.getItem('theme'));
+    // Retrieve the variable from sessionStorage
+    const theme = sessionStorage.getItem('theme');
     // Display the variable
     console.log('Theme: ' + theme);
     setIndexTheme(theme)
@@ -36,7 +39,7 @@ function changeIndexTheme(){
         changeFooterThemeToDarkMode();
         theme = 0;
     }
-    localStorage.setItem('theme', theme);
+    sessionStorage.setItem('theme', theme);
 }
 
 function setIndexTheme(currentTheme){
