@@ -10,7 +10,29 @@ body {
     background-image: url("../img/landingPagePic.jpg");
     padding: 24px 108px;
 }
-.main .site {
+.index-grid {
+    display: grid;
+    grid-template-columns: 224px auto;
+}
+.nav {
+    padding: 8px 24px;
+    float: right;
+}
+.nav a {
+    color: #dadada;
+    text-decoration: none;
+    padding: 8px 24px;
+}
+.nav a:hover {
+    position: relative;
+    animation: moveUpAndDown 1s;
+}
+@keyframes moveUpAndDown {
+    0% {top: 0px;}
+    66% {top: -8px;}
+    100% {top: 0px;}
+}
+.site {
     display: flex;
     flex-direction: row;
 }
