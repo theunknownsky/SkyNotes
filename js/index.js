@@ -4,7 +4,7 @@ console.log(sessionStorage.getItem('theme'));
 
 document.addEventListener('DOMContentLoaded', () => {
     if (sessionStorage.getItem('theme') === null){
-        sessionStorage.setItem('theme') = 0;
+        sessionStorage.setItem('theme', 0); 
     }
     console.log(sessionStorage.getItem('theme'));
     // Retrieve the variable from sessionStorage
