@@ -19,7 +19,13 @@ body {
     padding: 8px 24px;
 }
 .nav a:hover {
-    background-color: #505050;
+    position: relative;
+    animation: moveUpAndDown 1s;
+}
+@keyframes moveUpAndDown {
+    0% {top: 0px;}
+    66% {top: -12px;}
+    100% {top: 0px;}
 }
 .grid-item a {
     color: #dadada;
