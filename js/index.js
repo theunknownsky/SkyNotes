@@ -1,10 +1,9 @@
 var theme = 0;
 
-if (localStorage.getItem('theme') == null){
-    localStorage.setItem('theme') = 0;
-}
-
 document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === null){
+        localStorage.setItem('theme') = 0;
+    }
     // Retrieve the variable from localStorage
     const theme = localStorage.getItem('theme');
     // Display the variable
