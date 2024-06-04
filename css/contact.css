@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #242424;
+    color: #dadada;
+}
+.header {
+    display: grid;
+    grid-template-columns: auto auto 32px;
+    padding-top: 24px;
+    margin: 0px 108px;
+}
+.nav {
+    display: flex;
+    float: right;
+    padding: 0px 24px;
+}
+.nav a {
+    padding: 8px 24px;
+}
+.nav a:hover {
+    position: relative;
+    animation: moveUpAndDown 1s;
+}
+@keyframes moveUpAndDown {
+    0% {top: 0px;}
+    66% {top: -8px;}
+    100% {top: 0px;}
+}
+.grid-item a {
+    color: #dadada;
+    text-decoration: none;
+}
+.grid-item .site {
+    display: flex;
+    flex-direction: row;
+}
+.grid-item .theme {
+    cursor: pointer;
+}
+.site p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-left: 14px;
+}
+.site a {
+    display: flex;
+}
+.main-container {
+    display: grid;
+    padding: 64px 108px;
+    grid-template-columns: 60% 40%;
+}
+.message-form p {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 16px;
+}
+.message-form .to-center {
+    padding: 16px;
+    padding-left: 32px;
+    border: 1px solid #353535;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    margin-right: 128px;
+}
+form textarea {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #242424;
+    color: #dadada;
+    border-radius: 4px;
+}
+form button {
+    margin-top: 8px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #242424;
+    cursor: pointer;
+}
+form button:hover {
+    font-weight: 600;
+}
+.other-ways {
+    padding: 8px 16px;
+    border: 1px solid #353535;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+}
+.other-ways .thru-ways {
+    margin: 8px 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    padding: 8px;
+    background-color: #242424;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.thru-ways div {
+    padding-left: 16px;
+}
+.text .to-bold {
+    font-weight: 800;
+}
+.foot-grid-container {
+    background-color: #dadada;
+    color: #242424;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 48px 0px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.foot-grid-content a {
+    text-decoration: none;
+    color: #242424;
+    text-decoration: underline;
+}
