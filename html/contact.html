@@ -26,22 +26,22 @@
             </div>
         </div>
         <div class="grid-item">
-            <img src="../img/moon-white.svg" alt="" height="32px" class="theme" id="theme" onclick="changeSignupTheme()">
+            <img src="../img/moon-white.svg" alt="" height="32px" class="theme" id="theme" onclick="changeContactTheme()">
         </div>
     </div>
     <div class="main-container">
         <div class="message-form">
-            <div class="to-center">
+            <div class="form-container">
                 <p>Leave a message to the dev!</p>
                 <form action="">
                     <textarea name="message" id="message" rows="17" cols="75" placeholder="Write your message here..."></textarea>
                     <br>
-                    <button>Submit</button>
+                    <button id="send-message-button" onclick="sendMessage()">Send</button>
                 </form>
             </div>
         </div>
-        <div class="other-ways">
-            <div class="thru-ways">
+        <div class="other-ways" id="link-container">
+            <div class="thru-ways" onclick="goToGithub()">
                 <div class="logo-pics">
                     <img src="../img/github-white.svg" alt="github pic" width="80px" id="github-pic">
                 </div>
@@ -50,7 +50,7 @@
                     <p>Bugs in this website? Click here to make an issue in the app repository, made in GitHub!</p>
                 </div>
             </div>
-            <div class="thru-ways">
+            <div class="thru-ways" onclick="goToGmail()">
                 <div class="logo-pics">
                     <img src="../img/google-white.svg" alt="google pic" width="80px" id="google-pic">
                 </div>
@@ -59,7 +59,7 @@
                     <p>Interested in this website? Click here to inquire about Sky Notes through Gmail!</p>
                 </div>
             </div>
-            <div class="thru-ways">
+            <div class="thru-ways" onclick="goToFacebook()">
                 <div class="logo-pics">
                     <img src="../img/fb-white.svg" alt="facebook pic" width="80px" id="fb-pic">
                 </div>
