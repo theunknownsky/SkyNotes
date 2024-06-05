@@ -24,7 +24,7 @@ body {
 }
 @keyframes moveUpAndDown {
     0% {top: 0px;}
-    66% {top: -8px;}
+    66% {top: -4px;}
     100% {top: 0px;}
 }
 .grid-item a {
