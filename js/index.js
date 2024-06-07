@@ -39,6 +39,7 @@ function changeIndexTheme(){
         changeFooterThemeToDarkMode();
         theme = 0;
     }
+    siteAnimation();
     sessionStorage.setItem('theme', theme);
 }
 

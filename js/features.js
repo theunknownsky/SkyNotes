@@ -23,6 +23,7 @@ function changeFeatureTheme(){
         changeFormToDarkMode();
         theme = 0;
     }
+    siteAnimation();
     sessionStorage.setItem('theme', theme);
 }
 

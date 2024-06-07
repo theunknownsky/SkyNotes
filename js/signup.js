@@ -23,6 +23,7 @@ function changeSignupTheme(){
         changeFormToDarkMode();
         theme = 0;
     }
+    siteAnimation();
     sessionStorage.setItem('theme', theme);
 }
 

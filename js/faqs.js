@@ -54,6 +54,7 @@ function setFaqsTheme(currentTheme){
         changeHeaderToLightMode();
         changegFaqsToLightMode(); 
     }   
+    siteAnimation();
     theme = currentTheme;
 }
 

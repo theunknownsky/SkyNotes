@@ -10,6 +10,10 @@ function changeBodyThemeToDarkMode(){
     document.body.style.color = "#dadada";
 }
 
+function siteAnimation(){
+    document.body.style.transition = "0.5s";
+}
+
 // login/signup header changes
 function changeHeaderToLightMode(){
     document.getElementById("theme").src = "../img/sun-black.svg";

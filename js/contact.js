@@ -82,6 +82,7 @@ function changeContactTheme(){
         changeLinkContainerToDarkMode()
         theme = 0;
     }
+    siteAnimation();
     sessionStorage.setItem('theme', theme);
 }
 
