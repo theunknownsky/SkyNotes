@@ -90,7 +90,9 @@ body {
 .feature-text .feature-text-content {
     margin-top: 16px;
 }
-
+.toDemoImg {
+    cursor: pointer;
+}
 
 .foot-grid-container {
     background-color: #dadada;

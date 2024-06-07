@@ -59,7 +59,7 @@
                     <p class="feature-text-header">Experience The Demo</p>
                     <p class="feature-text-content">Want to test it out before actually registering an account? You can click the image beside this text to go to the demo site of Sky Notes! Take note that the data you'll put in the demo site will be gone once you closed it. Be careful!</p>
                 </div>
-                <img src="../img/feature1.png" alt="" width="100%">
+                <img src="../img/feature1.png" alt="" width="100%" class="toDemoImg" onclick="goToDemo()">
             </div>
         </div>
     </div>
@@ -96,5 +96,10 @@
     </footer>
     <script src="../js/main.js"></script>
     <script src="../js/features.js"></script>
+    <script>
+        function goToDemo(){
+            window.location.href = 'demo.html';
+        }
+    </script>
 </body>
 </html>
