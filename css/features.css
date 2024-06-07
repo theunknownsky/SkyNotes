@@ -50,15 +50,44 @@ body {
 .main-container {
     padding: 32px 108px 64px 108px;
 }
-.main-container p {
+.main-container .feature-header {
     margin: 0;
     text-align: center;
     font-size: 3em;
     font-weight: 700;
 }
 .main-container .feature-grid-container {
+    margin: 0;
+}
+.feature {
+    margin: 48px 0;
+}
+.feature-grid-left {
     display: grid;
-    
+    grid-template-columns: 50% 50%;
+}
+.feature-grid-left .feature-text {
+    margin-left: 32px;
+}
+.feature-grid-right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.feature-grid-right .feature-text {
+    margin-right: 32px;
+}
+.feature-text {
+    margin: auto 0;
+}
+.feature-text p {
+    margin: 0;
+}
+.feature-text .feature-text-header {
+    font-size: 2em;
+    font-weight: 700;
+}
+.feature-text .feature-text-content {
+    margin-top: 16px;
 }
 
 
