@@ -24,6 +24,12 @@ function changegFaqsToDarkMode(){
     });
 }
 
+function accordionTransition(){
+    document.querySelectorAll('.accordion').forEach(accordion => {
+        accordion.style.transition = '0.5s';
+    });
+}
+
 // theme change for login.html
 function changeFaqsTheme(){
     if (theme == 0){
@@ -39,6 +45,8 @@ function changeFaqsTheme(){
         changegFaqsToDarkMode();
         theme = 0;
     }
+    accordionTransition()
+    siteAnimation();
     sessionStorage.setItem('theme', theme);
 }
 
@@ -54,7 +62,6 @@ function setFaqsTheme(currentTheme){
         changeHeaderToLightMode();
         changegFaqsToLightMode(); 
     }   
-    siteAnimation();
     theme = currentTheme;
 }
 
