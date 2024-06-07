@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #242424;
+    color: #dadada;
+}
+.header {
+    display: grid;
+    grid-template-columns: auto auto 32px;
+    padding-top: 24px;
+    margin: 0px 108px;
+}
+.nav {
+    display: flex;
+    float: right;
+    padding: 0px 24px;
+}
+.nav a {
+    padding: 8px 24px;
+}
+.nav a:hover {
+    position: relative;
+    animation: moveUpAndDown 1s;
+}
+@keyframes moveUpAndDown {
+    0% {top: 0px;}
+    66% {top: -4px;}
+    100% {top: 0px;}
+}
+.grid-item a {
+    color: #dadada;
+    text-decoration: none;
+}
+.grid-item .site {
+    display: flex;
+    flex-direction: row;
+}
+.grid-item .theme {
+    cursor: pointer;
+}
+.site p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-left: 14px;
+}
+.site a {
+    display: flex;
+}
+.main-container {
+    padding: 32px 108px 64px 108px;
+}
+.main-container .faq-header {
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+}
+.faq-container {
+    border: 1px solid #353535;
+    border-radius: 16px;
+    padding: 32px;
+}
+.accordion {
+    background-color: #1f1f1f;
+    color: #dadada;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #353535;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active {
+    background-color: #353535;
+}
+.accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    border: 1px solid #353535;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.foot-grid-container {
+    background-color: #dadada;
+    color: #242424;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 48px 0px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.foot-grid-content a {
+    text-decoration: none;
+    color: #242424;
+    text-decoration: underline;
+}

@@ -18,7 +18,9 @@ function changeHeaderToLightMode(){
     document.getElementById("about-us").style.color = "#242424";
     document.getElementById("contact").style.color = "#242424";
     document.getElementById("features").style.color = "#242424";
+    document.getElementById("faqs").style.color = "#242424";
     document.getElementById("login").style.color = "#242424";
+    
 }
 function changeHeaderToDarkMode(){
     document.getElementById("theme").src = "../img/moon-white.svg";
@@ -27,6 +29,7 @@ function changeHeaderToDarkMode(){
     document.getElementById("about-us").style.color = "#dadada";
     document.getElementById("contact").style.color = "#dadada";
     document.getElementById("features").style.color = "#dadada";
+    document.getElementById("faqs").style.color = "#dadada";
     document.getElementById("login").style.color = "#dadada";
 }
 
