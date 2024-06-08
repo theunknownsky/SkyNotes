@@ -20,13 +20,8 @@ body {
     padding: 8px 24px;
 }
 .nav a:hover {
-    position: relative;
-    animation: moveUpAndDown 1s;
-}
-@keyframes moveUpAndDown {
-    0% {top: 0px;}
-    66% {top: -4px;}
-    100% {top: 0px;}
+    background-color: #8e8e8e;
+    border-radius: 8px;
 }
 .grid-item a {
     color: #dadada;

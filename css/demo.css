@@ -54,9 +54,16 @@ body {
     cursor: pointer;
 }
 .sidebar-nav-link:hover {
-    background-color: #636363;
+    background-color: #8e8e8e;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 .sidebar-nav-link p {
     margin: 0;
     padding: 8px 0;
+}
+.active {
+    background-color: #8e8e8e;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
