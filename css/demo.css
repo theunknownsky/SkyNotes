@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #242424;
+    color: #dadada;
+    /* transition: 0.5s; */
+}
+.header {
+    display: grid;
+    grid-template-columns: auto auto 32px;
+    padding-top: 24px;
+    margin: 0px 108px 0px 32px;
+}
+.grid-item a {
+    color: #dadada;
+    text-decoration: none;
+}
+.grid-item .site {
+    display: flex;
+    flex-direction: row;
+}
+.grid-item .theme {
+    cursor: pointer;
+    float: right;
+}
+.grid-item .user {
+    margin: 0;
+    text-align: right;
+    padding: 8px 0;
+    padding-right: 96px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.site p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-left: 14px;
+}
+.site a {
+    display: flex;
+}
+.main-container {
+    border-top: 2px solid #353535;
+    margin: 0;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.sidebar .sidebar-nav-link {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 16px 0px 16px 32px;
+    cursor: pointer;
+}
+.sidebar-nav-link:hover {
+    background-color: #636363;
+}
+.sidebar-nav-link p {
+    margin: 0;
+    padding: 8px 0;
+}
