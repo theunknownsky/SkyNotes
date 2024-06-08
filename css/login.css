@@ -103,7 +103,7 @@ form button {
     margin: 14px 0px;
 }
 .to-reg a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #2636ea;
 }
 .foot-grid-container {
