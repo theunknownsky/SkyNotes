@@ -28,8 +28,6 @@ body {
     text-align: right;
     padding: 8px 0;
     padding-right: 96px;
-    text-decoration: underline;
-    cursor: pointer;
 }
 .site p {
     margin: 0;
