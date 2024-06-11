@@ -8,18 +8,45 @@ document.addEventListener('DOMContentLoaded', () => {
     setNotesTheme(theme)
 });
 
+function changeNotesFormThemeToLightMode(){
+    document.getElementById('note-title').style.backgroundColor = "#dadada";
+    document.getElementById('note-title').style.color = "#242424";
+    document.getElementById('note-content').style.backgroundColor = "#dadada";
+    document.getElementById('note-content').style.color = "#242424";
+    document.getElementById('reset-note').style.backgroundColor = "#dadada";
+    document.getElementById('reset-note').style.color = "#242424";
+    document.getElementById('reset-note').style.borderColor = "#242424";
+    document.getElementById('save-note').style.backgroundColor = "#dadada";
+    document.getElementById('save-note').style.color = "#242424";
+    document.getElementById('save-note').style.borderColor = "#242424";
+}
+function changeNotesFormThemeToDarkMode(){
+    document.getElementById('note-title').style.backgroundColor = "#242424";
+    document.getElementById('note-title').style.color = "#dadada";
+    document.getElementById('note-content').style.backgroundColor = "#242424";
+    document.getElementById('note-content').style.color = "#dadada";
+    document.getElementById('reset-note').style.backgroundColor = "#242424";
+    document.getElementById('reset-note').style.color = "#dadada";
+    document.getElementById('reset-note').style.borderColor = "#dadada";
+    document.getElementById('save-note').style.backgroundColor = "#242424";
+    document.getElementById('save-note').style.color = "#dadada";
+    document.getElementById('save-note').style.borderColor = "#dadada";
+}
+
+
 // theme change for login.html
 function changeNotesTheme(){
     if (theme == 0){
         changeBodyThemeToLightMode();
         changeNotesHeaderToLightMode();
         changeNotesNavbarToLightMode();
+        changeNotesFormThemeToLightMode();
         theme = 1;
     } else if (theme == 1){
         changeBodyThemeToDarkMode();
         changeNotesHeaderToDarkMode();
         changeNotesNavbarToDarkMode();
-        
+        changeNotesFormThemeToDarkMode()
         theme = 0;
     }
     siteAnimation();
@@ -31,11 +58,29 @@ function setNotesTheme(currentTheme){
         changeBodyThemeToDarkMode();
         changeNotesHeaderToDarkMode();
         changeNotesNavbarToDarkMode();
-        
+        changeNotesFormThemeToDarkMode()
     } else if (currentTheme == 1){
         changeBodyThemeToLightMode();
         changeNotesHeaderToLightMode();
         changeNotesNavbarToLightMode();
+        changeNotesFormThemeToLightMode();
     }   
     theme = currentTheme;
+}
+
+// textarea height adjustment
+noteContent = document.querySelector(".note-content");
+noteContent.addEventListener('input', autoResize, false);
+function autoResize() {
+    this.style.height = 'auto';
+    this.style.height = this.scrollHeight + 'px';
+}
+
+function resetNoteForm(){
+    document.getElementById('note-title').innerHTML = "";
+    document.getElementById('note-content').innerHTML = "";
+}
+function saveNoteForm(){
+    alert("Demo: Your note is now saved. Be reminded that this is a demo and your data will be lost right away. Thank you for using this website.");
+    resetNoteForm();
 }

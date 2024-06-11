@@ -65,3 +65,49 @@ body {
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
 }
+
+.new-note-container {
+    margin: 28px 80px;
+    padding: 16px 32px;
+    border: 1px solid #353535;
+    border-radius: 12px;
+}
+.note-title {
+    font-size: 1.5em;
+    border: none;
+    background-color: #242424;
+    color: #dadada;
+    margin-bottom: 8px;
+    width: 97.5%;
+    padding: 8px;
+}
+.note-content {
+    font-size: 1em;
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    background-color: #242424;
+    color: #dadada;
+    padding: 8px;
+    width: 97.5%;
+    margin-bottom: 8px;
+}
+.reset-note, .save-note {
+    border: 1px solid #dadada;
+    background: #242424;
+    color: #dadada;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.reset-note:hover, .save-note:hover {
+    background: #8e8e8e;
+}
+.no-notes-img {
+    display: block;
+    margin: 0 auto;
+}
+.no-notes-reminder {
+    margin: 0;
+    text-align: center;
+}
