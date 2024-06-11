@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Notes (DEMO)</title>
     <link rel="stylesheet" href="../css/font-import.css">
-    <link rel="stylesheet" href="../css/notes.css">
+    <link rel="stylesheet" href="../css/archives.css">
 </head>
 <body>
     <div class="header">
@@ -21,7 +21,7 @@
             <p class="user">Hello, User!</p>
         </div>
         <div class="grid-item">
-            <img src="../img/moon-white.svg" alt="" height="32px" class="theme" id="theme" onclick="changeNotesTheme()">
+            <img src="../img/moon-white.svg" alt="" height="32px" class="theme" id="theme" onclick="changeArchivesTheme()">
         </div>
     </div>
     <div class="main-container">
@@ -58,14 +58,16 @@
                     <p class="username">Trash</p>
                 </div>
             </div>
-
         </div>
         <div class="main-content">
-
+            <div class="notes-container">
+                <img src="../img/archive-neutral.svg" alt="" width="320px" class="no-notes-img">
+                <p class="no-notes-reminder">Your archive is currently empty.</p>
+            </div>
         </div>
     </div>
 
     <script src="../js/forNotes.js"></script>
-    <script src="../js/notes.js"></script>
+    <script src="../js/archives.js"></script>
 </body>
 </html>
