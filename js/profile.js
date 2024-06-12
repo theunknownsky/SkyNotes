@@ -7,21 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Theme: ' + theme);
     setProfileTheme(theme)
 
-    if (sessionStorage.getItem('firstname') == null){
-        sessionStorage.setItem('firstname', "Vonn Harold");
-        document.getElementById('firstname').value = sessionStorage.getItem('firstname');
-    }
-    if (sessionStorage.getItem('lastname') == null){
-        sessionStorage.setItem('lastname', "Mamaril");
-        document.getElementById('lastname').value = sessionStorage.getItem('lastname');
-    }
-    if (sessionStorage.getItem('nickname') == null){
-        sessionStorage.setItem('nickname', "Inconnus");
-        document.getElementById('nickname').value = sessionStorage.getItem('nickname');
-    }
     document.getElementById('firstname').value = sessionStorage.getItem('firstname');
     document.getElementById('lastname').value = sessionStorage.getItem('lastname');
     document.getElementById('nickname').value = sessionStorage.getItem('nickname');
+    document.getElementById('email').value = sessionStorage.getItem('email');
     document.getElementById('user').innerHTML = "Hello, " + sessionStorage.getItem('nickname') + "!";
     document.getElementById('current-user').innerHTML = "Current User: " + sessionStorage.getItem('nickname');
 });
@@ -115,16 +104,20 @@ function resetPasswordDetails(){
 function savePasswordDetails(){
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmPassword').value;
-    if (password == confirmPassword){
-        if (password != sessionStorage.getItem('password')){
-            alert("Sky Notes Demo: Your password is now saved.");
-            sessionStorage.setItem('password', password);
-            resetPasswordDetails();
+    if (password.length > 3){
+        if (password == confirmPassword){
+            if (password != sessionStorage.getItem('password')){
+                alert("Sky Notes Demo: Your password is now saved.");
+                sessionStorage.setItem('password', password);
+                resetPasswordDetails();
+            } else {
+                alert("Sky Notes Demo: This is your current password.")
+                resetPasswordDetails();
+            }
         } else {
-            alert("Sky Notes Demo: This is your current password.")
-            resetPasswordDetails();
+            alert("Sky Notes Demo: Please type the right password in the Confirm Password field.")
         }
     } else {
-        alert("Sky Notes Demo: Please type the right password in the Confirm Password field.")
+        alert('Your password length must be 4 or more than 4 characters.');
     }
 }

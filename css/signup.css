@@ -69,7 +69,7 @@ body {
     margin-right: 320px;
 }
 
-form input {
+.form-container input {
     width: 90%;
     margin-top: 8px;
     padding: 6px 12px;
@@ -81,16 +81,17 @@ form input {
     border-radius: 4px;
     font-size: 14px;
 }
-form label {
+.form-container label {
     font-size: 14px;
 }
-form button {
+.form-container button {
     background-color: #04AA6D;
     color: #dadada;
     width: 100%;
     padding: 4px;
     border-radius: 4px;
     border: 1px solid #04AA6D;
+    cursor: pointer;
 }
 .to-login {
     border: 1px solid #353535;
