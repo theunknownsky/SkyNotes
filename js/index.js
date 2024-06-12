@@ -14,19 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
     setIndexTheme(theme)
 
     if (sessionStorage.getItem('firstname') == null){
-        sessionStorage.setItem('firstname', "Vonn Harold");
+        sessionStorage.setItem('firstname', "Test User First Name");
     }
     if (sessionStorage.getItem('lastname') == null){
-        sessionStorage.setItem('lastname', "Mamaril");
+        sessionStorage.setItem('lastname', "Test User Last Name");
     }
     if (sessionStorage.getItem('nickname') == null){
-        sessionStorage.setItem('nickname', "Inconnus");
+        sessionStorage.setItem('nickname', "Test User");
     }
     if (sessionStorage.getItem('email') == null){
         sessionStorage.setItem('email', "testuser@gmail.com");
     }
     if (sessionStorage.getItem('password') == null){
-        sessionStorage.setItem('password', "12345678");
+        sessionStorage.setItem('password', "1234");
     }
 });
 
