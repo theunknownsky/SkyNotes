@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display the variable
     console.log('Theme: ' + theme);
     setLoginTheme(theme)
+    document.getElementById('email').placeholder = sessionStorage.getItem('email')
+    document.getElementById('password').placeholder = sessionStorage.getItem('password')
 });
 
 // theme change for login.html
@@ -40,4 +42,19 @@ function setLoginTheme(currentTheme){
         changeFormToLightMode();  
     }   
     theme = currentTheme;
+}
+
+function loginAttempt(){
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    if (email == sessionStorage.getItem('email')){
+        if (password == sessionStorage.getItem('password')){
+            alert('You are now redirected to the demo of Sky Notes.');
+            window.location.href = 'notes.html';
+        } else {
+            alert('Wrong password: You can use the current test saved password: ' + sessionStorage.getItem('password'));
+        }
+    } else {
+        alert('Email does not exist: You can use the current test saved email: ' + sessionStorage.getItem('email'));
+    }
 }

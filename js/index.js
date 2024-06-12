@@ -12,6 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display the variable
     console.log('Theme: ' + theme);
     setIndexTheme(theme)
+
+    if (sessionStorage.getItem('firstname') == null){
+        sessionStorage.setItem('firstname', "Vonn Harold");
+    }
+    if (sessionStorage.getItem('lastname') == null){
+        sessionStorage.setItem('lastname', "Mamaril");
+    }
+    if (sessionStorage.getItem('nickname') == null){
+        sessionStorage.setItem('nickname', "Inconnus");
+    }
+    if (sessionStorage.getItem('email') == null){
+        sessionStorage.setItem('email', "testuser@gmail.com");
+    }
+    if (sessionStorage.getItem('password') == null){
+        sessionStorage.setItem('password', "12345678");
+    }
 });
 
 // theme change for index.html
