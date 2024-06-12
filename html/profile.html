@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="grid-item">
-            <p class="user">Hello, User!</p>
+            <p class="user" id="user">Hello, User!</p>
         </div>
         <div class="grid-item">
             <img src="../img/moon-white.svg" alt="" height="32px" class="theme" id="theme" onclick="changeProfileTheme()">
@@ -62,31 +62,31 @@
         </div>
         <div class="main-content">
             <div>
-                <p class="current-user">Current User: User</p>
+                <p class="current-user" id="current-user">Current User: User</p>
             </div>
             <div class="form-container">
                 <div class="form-grid">
                     <div>
                         <label for="firstname">First Name</label>
                         <br>
-                        <input type="text" id="firstname" name="firstname" value="Test User First Name">
+                        <input type="text" id="firstname" name="firstname" value="">
                         <br><br>
                         <label for="nickanme">Nickname</label>
                         <br>
-                        <input type="text" id="nickname" name="nickname" value="User">
+                        <input type="text" id="nickname" name="nickname" value="">
                         <br><br>
                     </div>
                     <div>
                         <label for="lastname">Last Name</label>
                         <br>
-                        <input type="text" id="lastname" name="lastname" value="Test User Last Name">
+                        <input type="text" id="lastname" name="lastname" value="">
                         <br><br>
                         <label for="email">Email Address</label>
                         <br>
                         <input type="email" id="email" name="email" value="testuser@email.com">
                         <br><br>
-                        <button class="reset-profile">Reset</button>
-                        <button class="save-profile">Save</button>
+                        <button class="reset-profile" onclick="resetProfileDetails()">Reset</button>
+                        <button class="save-profile" onclick="saveProfileDetails()">Save</button>
                     </div>
                 </div>
                 <div class="form-grid grid-2">
@@ -99,10 +99,10 @@
                     <div>
                         <label for="confirmPassword">Confirm New Password</label>
                         <br>
-                        <input type="password" id=confirmPassword" name=confirmPassword" placeholder="">
+                        <input type="password" id="confirmPassword" name=confirmPassword" placeholder="">
                         <br><br>
-                        <button class="reset-profile">Reset</button>
-                        <button class="save-profile">Save</button>
+                        <button class="reset-profile" onclick="resetPasswordDetails()">Reset</button>
+                        <button class="save-profile" onclick="savePasswordDetails()">Save</button>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display the variable
     console.log('Theme: ' + theme);
     setNotesTheme(theme)
+    if (sessionStorage.getItem('firstname') == null){
+        sessionStorage.setItem('firstname', "Vonn Harold");
+    }
+    if (sessionStorage.getItem('lastname') == null){
+        sessionStorage.setItem('lastname', "Mamaril");
+    }
+    if (sessionStorage.getItem('nickname') == null){
+        sessionStorage.setItem('nickname', "Inconnus");
+    }
+    document.getElementById('current-user').innerHTML = "Hello, " + sessionStorage.getItem('nickname') + "!";
+
 });
 
 function changeNotesFormThemeToLightMode(){
