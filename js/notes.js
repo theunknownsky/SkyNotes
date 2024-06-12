@@ -88,10 +88,10 @@ function autoResize() {
 }
 
 function resetNoteForm(){
-    document.getElementById('note-title').innerHTML = "";
-    document.getElementById('note-content').innerHTML = "";
+    document.getElementById('note-title').value = "";
+    document.getElementById('note-content').value = "";
 }
 function saveNoteForm(){
-    alert("Demo: Your note is now saved. Be reminded that this is a demo and your data will be lost right away. Thank you for using this website.");
+    alert("Demo: Your note will not be saved. Be reminded that this is a demo and your data will be lost right away. Thank you for using this website.");
     resetNoteForm();
 }
