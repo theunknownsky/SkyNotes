@@ -46,3 +46,7 @@ function goToArchives(){
 function goToTrash(){
     window.location.href = "trash.html";
 }
+
+function logout(){
+    window.location.href = "login.html";
+}
