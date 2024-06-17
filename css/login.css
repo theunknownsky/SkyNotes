@@ -91,6 +91,14 @@ body {
     border: 1px solid #04AA6D;
     cursor: pointer;
 }
+.form-container .forgot-pass {
+    font-size: 14px;
+    float: right;
+    margin-right: 8px;
+    color: #2636ea;
+    text-decoration: underline;
+    cursor: pointer;
+}
 .to-reg {
     border: 1px solid #353535;
     /* border: 1px solid #bdbdbd; */
